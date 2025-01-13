@@ -9,6 +9,73 @@
 
 </head>
 <body>
-    
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <!-- Triangle card  -->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img
+                            src="images/triangle.png"
+                            alt="Shoes"
+                            class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title ">Triangle</h2>
+                          <p>Area (A) =0.5 X b X h</p>
+                          <!-- Calculate div -->
+                          <div >
+                            <!-- base  -->
+                            <input id="triangle-base" class="bg-[#F1F1F1] w-20 p-2 mr-1.5 rounded-sm" type="text" placeholder="b"><span class="mr-2.5">cm</span>
+                            <!-- hight -->
+                            <input id="triangle-hight" class="bg-[#F1F1F1] w-20 p-2 mr-1.5 rounded-sm" type="text" placeholder="h"><span class="">cm</span>   
+                          </div>
+                          <!-- area value  -->
+                           <div>
+                             <p  class="text-xl">Area: <span id="area-triangle"></span> <span>cm<sup>2</sup></span></p>
+                           </div>
+                           <!-- btn  -->
+                          <div onclick="calculateTriangleArea() " class="card-actions w-full">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Rectangle card  -->
+                   <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                          <img
+                            src="images/rectangle.png"
+                            alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                       <div class="card-body items-center text-center">
+                          <h2 class="card-title ">Rectangle</h2>
+                          <p>Area (A) = w  X  l</p>
+                          <!-- Calculate div -->
+                          <div >
+                            <!-- base  -->
+                            <input id="rectangle-width" class="bg-[#F1F1F1] w-20 p-2 mr-1.5 rounded-sm" type="text" placeholder="w"><span class="mr-2.5 ">cm</span>
+                            <!-- hight -->
+                            <input id="rectangle-hight" class="bg-[#F1F1F1] w-20 p-2 mr-1.5 rounded-sm" type="text" placeholder="l"><span class="">cm</span>   
+                          </div>
+                          <!-- area value  -->
+                           <div>
+                             <p  class="text-xl">Area: <span id="area-rectangle"></span> <span>cm<sup>2</sup></span></p>
+                           </div>
+                           <!-- btn  -->
+                           <div onclick="calculateRectangleArea() " class="card-actions w-full">
+                          <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="jsFile/calculate.js"></script>
 </body>
 </html>
